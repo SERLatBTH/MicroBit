@@ -16,11 +16,15 @@ The BBC micro:bit is a handheld, programmable micro-computer that can be used fo
 
 
 ## In The Box
-
-
+When you get the micro:bit, here is the things that you need to have.
+1. two AAA batteries
+2. battery holder
+3. micro USB cable
+4. safety guide and ready set go
+![alt text](/image/content.jpg)
 
 ## Chip Layout
-
+![alt text](/image/overview.png)
 
 
 ## How Does It Work
@@ -42,3 +46,5 @@ Micro:bit can be programmed using Blocks, JavaScript, and Python. No environment
 3. Click download to get a .hex file that can be used to program the micro:bit
 4. You can click on save to get python file (.py) of the source code
 5. If you already have a .hex file or .py file you can load it by clicking on load button then choosing the file. Note: if you chose to load .hex file make sure you exported it using python editor not MakeCode Editor
+
+## Feature
