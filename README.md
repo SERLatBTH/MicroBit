@@ -20,16 +20,17 @@ When you get the micro:bit, here is the things that you need to have.
 2. battery holder
 3. micro USB cable
 4. safety guide and ready set go
-![alt text](/image/content.jpg)
+5. micro:bit
+![alt text](/images/content.jpg)
 
 ## Chip Layout
-![alt text](/image/overview.png)
+![alt text](/images/overview.png)
 
 
 
 ## Programming the MicroBit
 
-## Environment And Languages
+### Environment And Languages
 
 Micro:bit can be programmed using Blocks, JavaScript, and Python. No environment setup required to write code for micro:bit, instead you need just a web browser to access the online editor, write your code and download it to micro:bit.
 
