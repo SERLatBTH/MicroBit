@@ -35,7 +35,7 @@ When you get the micro:bit, here is the things that you need to have.
 Micro:bit can be programmed using Blocks, JavaScript, and Python. No environment setup required to write code for micro:bit, instead you need just a web browser to access the online editor, write your code and download it to micro:bit.
 
 ### Blocks and JavaScript
-1. To write code using Blocks or JavaScript go to the online [MakeCode editor](#https://makecode.microbit.org/#)
+1. To write code using Blocks or JavaScript go to the online [MakeCode editor](#https://makecode.microbit.org/)
 2. Choose the desired language Blocks or JavaScript from the switch in the middle of the top bar.
 3. Write your code. If you are using blocks then you can drag and drop the required piece of code from the left side bar.
 4. A simulator is found in the editor on the left side that helps you test your code before writing it to the chip.
