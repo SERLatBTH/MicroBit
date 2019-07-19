@@ -15,10 +15,15 @@ The BBC micro:bit is a handheld, programmable micro-computer that can be used fo
 
 
 ## In The Box
-
-
+When you get the micro:bit, here is the things that you need to have.
+1. two AAA batteries
+2. battery holder
+3. micro USB cable
+4. safety guide and ready set go
+![alt text](/image/content.jpg)
 
 ## Chip Layout
+![alt text](/image/overview.png)
 
 
 
@@ -50,3 +55,5 @@ After writing the code and extracting .hex file using the online editor then it 
 3. Copy the .hex file to micro:bit drive.
 4. You can now disconnect micro:bit and start using the program.
 5. You can click the reset button on the back of micro:bit to start the program from the beginning.
+
+## Feature
