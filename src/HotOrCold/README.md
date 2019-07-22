@@ -1,10 +1,10 @@
-#Hot Or Cold
+# Hot Or Cold
 
 Is a game in which you should find hidden microbits before other players. There are two types of microbits in this game, beacons and hunters. A Beacon is a hidden microbit that it emits a signal. A Hunter is the microbit in hand that is used to find beacons by detecting the signal sent by beacons.
 
-##JavaScript
+## JavaScript
 
-##Beacon
+## Beacon
 A beacon will emit a signal by sending number. An icon will display indicating that it is sending. The patter will keep repeating forever.
 
 ```
@@ -25,7 +25,7 @@ basic.forever(function () {
 })
 ```
 
-##Hunter
+## Hunter
 The hunter will be used to find beacons. When the hunter receives a number it will store the signal strength. Then it will display the value of the signal strength or an icon that represents how close the beacon is from the hunter. The player can choose to show number or icon.
 
 ```
