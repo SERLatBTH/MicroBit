@@ -102,6 +102,6 @@ After writing the code and extracting .hex file using the online editor then it 
 
 ## Examples and Tutorials
 
-* [Micro Chat](examples/microchat): As start you can start with micro chat, a small application that allows sending messages between microbits
-* [Hot Or Cold](examples/hotorcold): a game in which you should find hidden microbits.
+* [Micro Chat](/examples/microchat): As start you can start with micro chat, a small application that allows sending messages between microbits
+* [Hot Or Cold](/examples/hotorcold): a game in which you should find hidden microbits.
 * More examples and tutorials are available on [makercode website](https://makecode.microbit.org/)
