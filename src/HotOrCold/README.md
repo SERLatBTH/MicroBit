@@ -7,7 +7,7 @@ Is a game in which you should find hidden microbits before other players. There 
 ## Beacon
 A beacon will emit a signal by sending number. An icon will display indicating that it is sending. The patter will keep repeating forever.
 
-```
+```JavaScript
 //set group number
 radio.setGroup(1)
 //enable transmit of serial number
@@ -28,7 +28,7 @@ basic.forever(function () {
 ## Hunter
 The hunter will be used to find beacons. When the hunter receives a number it will store the signal strength. Then it will display the value of the signal strength or an icon that represents how close the beacon is from the hunter. The player can choose to show number or icon.
 
-```
+```JavaScript
 // variable to store received signal strength
 let signal;
 // set group number
@@ -54,7 +54,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 To make the game more interesting, we are going to modify the code of the hunter to distinguish between different beacons signals. When a new beacon is found then it is added to an array of beacons and the score for the player will increase. We can distinguish between different beacon by reading the serial number from the received signal (number or string), since we already enabled send serial number in beacons code no changes needed to that code. When button B is pressed it will show the score.
 
-```
+```JavaScript
 // variable to store received signal strength
 let signal = -200
 // stores the received serial number
