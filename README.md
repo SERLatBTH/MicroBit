@@ -8,10 +8,12 @@ The BBC micro:bit is a handheld, programmable micro-computer that can be used fo
 * [Chip Layout](#chip-layout)
 * [MicroBit Specs And Features](#device's-functionalities-and-features)
 * [Programming the MicroBit](#programming-the-microbits)
-* [SDK](#sdk)
-  * [Become A Developer](#becaome-a-developer)
-* [Putting The Device Back](#putting-the-device-back)
-* [More Documentations](more-documentations)
+  * [Environment And Languages](#environment-and-languages)
+  * [Writing Code: Blocks and JavaScript](#writing-code-blocks-and-javaScript)
+  * [Writing Code - Python](#writing-code-python)
+  * [Flashing the Chip](#flashingthe-chip)
+* [Examples and Tutorials](#examples-and-tutorials)
+
 
 
 ## In The Box
@@ -76,7 +78,7 @@ The micro:bit has the following physical features:
 
 Micro:bit can be programmed using Blocks, JavaScript, and Python. No environment setup required to write code for micro:bit, instead you need just a web browser to access the online editor, write your code and download it to micro:bit.
 
-### Writing Code: Blocks and JavaScript
+### Writing Code - Blocks and JavaScript
 1. To write code using Blocks or JavaScript go to the online [MakeCode editor](https://makecode.microbit.org/)
 2. Choose the desired language Blocks or JavaScript from the switch in the middle of the top bar.
 3. Write your code. If you are using blocks then you can drag and drop the required piece of code from the left side bar.
@@ -84,7 +86,7 @@ Micro:bit can be programmed using Blocks, JavaScript, and Python. No environment
 4. Click download to get a .hex file that can be used to program the micro:bit.
 5. You can also choose to save the project in the editor. This will save the project in the browser you are using and will only be accessible from the same browser, using different browser or different computer you will not be able to access the projects.
 
-### Writing Code: Python
+### Writing Code - Python
 1. To write code using Python go to the [online editor](https://python.microbit.org/v/1.1)
 2. Write your code
 3. Click download to get a .hex file that can be used to program the micro:bit
@@ -98,3 +100,9 @@ After writing the code and extracting .hex file using the online editor then it 
 3. Copy the .hex file to micro:bit drive.
 4. You can now disconnect micro:bit and start using the program.
 5. You can click the reset button on the back of micro:bit to start the program from the beginning.
+
+## Examples and Tutorials
+
+* [Micro Chat](microchat): As start you can start with micro chat, a small application that allows sending messages between microbits
+* [Hot Or Cold](hotorcold): a game in which you should find hidden microbits.
+* More examples and tutorials are available on [makercode website](https://makecode.microbit.org/)
