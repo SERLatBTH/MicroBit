@@ -15,7 +15,6 @@ The BBC micro:bit is a handheld, programmable micro-computer that can be used fo
 * [Examples and Tutorials](#examples-and-tutorials)
 
 
-
 ## In The Box
 When you get the micro:bit, here is the things that you need to have.
 1. two AAA batteries
@@ -103,6 +102,6 @@ After writing the code and extracting .hex file using the online editor then it 
 
 ## Examples and Tutorials
 
-* [Micro Chat](microchat): As start you can start with micro chat, a small application that allows sending messages between microbits
-* [Hot Or Cold](hotorcold): a game in which you should find hidden microbits.
+* [Micro Chat](examples/microchat): As start you can start with micro chat, a small application that allows sending messages between microbits
+* [Hot Or Cold](examples/hotorcold): a game in which you should find hidden microbits.
 * More examples and tutorials are available on [makercode website](https://makecode.microbit.org/)
