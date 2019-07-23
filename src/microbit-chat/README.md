@@ -15,7 +15,7 @@ To write code in JavaScript start by doing the following.
 ### Chat-1
 
 1. Start by writing the following code.
-   ```
+   ```JavaScript
    input.onButtonPressed(Button.A, function () {
 
    })
@@ -24,11 +24,11 @@ To write code in JavaScript start by doing the following.
    onButtonPressed(parameter1, parameter2) takes two parameters, parameter1 is the button which this event is triggered for when pressed, parameter2 is a function, inside the function we will write the code that we want to execute when the button is pressed.
 
 2. Inside onButtonPressed() we send a message by using radio.sendString("Hej!"). This will transfer messages using radio signal between micro:bit boards.
-    ```
+    ```JavaScript
     radio.sendString("Hej!")
     ```
 3. We show animation so we know we sent a message basic.showLeds('') with the shape we want to send (5x5). Then we pause for few milliseconds basic.pasue(200) before we clear the screen using basic.clearScreen() this gives you more time to see the icon before it disappears.
-    ```
+    ```JavaScript
     basic.showLeds(`
         . . # # #
         . . . # #
@@ -40,14 +40,14 @@ To write code in JavaScript start by doing the following.
     basic.clearScreen()
     ```
 4. To receive messages we use radion.onReceivedString() which takes a function with one parameter which is the received string. Inside the event we write basic.showString(receivedString) which will show the received string on the screen.
-    ```
+    ```JavaScript
     radio.onReceivedString(function (receivedString) {
         basic.showString(receivedString)
     })
     ```
 2.  The final code would looks like this.
 
-  ```
+  ```JavaScript
   input.onButtonPressed(Button.A, function () {
       radio.sendString("Hej!")
       basic.showLeds(`
@@ -70,7 +70,7 @@ To write code in JavaScript start by doing the following.
 Now we are going to enhance our app a little more and try to extend it. Instead of a pre-set phrases we are going to let the user write the word they want to send, and add an animation on receiving of the message.
 1. We define the following variables. message which stores the entire message that is going to be sent, alphabet as an array of letters and index to navigate alphabet array.
 
-    ```
+    ```JavaScript
     let message = ""
     let alphabet: string[] = []
     let index = 0
@@ -79,7 +79,7 @@ Now we are going to enhance our app a little more and try to extend it. Instead 
     ```
 2. We move the code inside onButtonPressed(Button.A, function()){...} to input.onGesture(Gesture.shake, function()){...} and we reset message and index to initial values.
 
-    ```
+    ```JavaScript
     input.onGesture(Gesture.Shake, function () {
         radio.sendString(message)
         basic.showLeds(`
@@ -97,7 +97,7 @@ Now we are going to enhance our app a little more and try to extend it. Instead 
 
     ```
 3. In onButtonPressed(Button.A, function()){...}, we increase index by 1, then we check if the index reached alphabet.length, which means it is out of range and we reset it there. Now we show the string to user to know if this is the letter they want basic.showString(alphabet[index]).
-    ```
+    ```JavaScript
     input.onButtonPressed(Button.A, function () {
         index += 1
         if (index === alphabet.length) {
@@ -107,7 +107,7 @@ Now we are going to enhance our app a little more and try to extend it. Instead 
     })
     ```
 4. We add the event onButtonPressed for button B and inside we add the letter on screen to the message variable. and reset index to -1.
-    ```
+    ```JavaScript
     input.onButtonPressed(Button.B, function () {
         message = message + alphabet[index]
         index = -1
@@ -116,7 +116,7 @@ Now we are going to enhance our app a little more and try to extend it. Instead 
     ```
 
 5. Then to show animation when a message received we add basic.showIcon(IconNames.Sword) inside onReceivedString() .
-    ```
+    ```JavaScript
     radio.onReceivedString(function (receivedString) {
         basic.showIcon(IconNames.Sword)
         basic.showString(receivedString)
@@ -127,7 +127,7 @@ Now we are going to enhance our app a little more and try to extend it. Instead 
     radio.SetGroup(50)
     ```
 7. After making the changes and extending it, the final code should looks like.
-    ```
+    ```JavaScript
     input.onGesture(Gesture.Shake, function () {
         radio.sendString(message)
         basic.showLeds(`
